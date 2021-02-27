@@ -1,0 +1,506 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	font-family: neue-haas-unica, sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #555555;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+
+}
+
+.container {
+	width: 90%;
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.main {
+	display: flex;
+	margin-top: 80px;
+}
+
+.main:nth-child(n+3) {
+	margin-top: 40px;
+}
+
+header {
+	width: 100%;
+	height: 670px;
+	background: url('../img/coaching-bg.png') #2D54A2;
+	padding-top: 50px;
+	height: auto;
+}
+
+header.coaching {
+	background: url('../img/coaching-bg-alt-2.png') #2D54A2;
+	height: auto;
+}
+
+.logo {
+	width: 180px;
+}
+
+.playbutton img {
+	margin: 40px auto;
+	text-align: center;
+}
+
+/* Navigation */
+
+nav {
+  	align-items: center;
+  	height: 77px;
+  	font-size: 18px;
+  	color: #ffffff;
+}
+
+nav ul li {
+	display: inline-flex;
+	list-style-type: none;
+	margin-right: 28px;
+}
+
+nav ul li a {
+	color: 	#ffffff;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	cursor: pointer;
+	border-bottom: 1px solid #5EB1BF;
+	padding-top: 2px;
+}
+
+nav ul li a.active {
+	border-bottom: 1px solid #5EB1BF;
+	padding-top: 2px;	
+}
+
+/* Header */
+
+.headerinner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	max-height: 540px;	
+}
+
+.hero img {
+	flex:  1;
+}
+
+.heroinner {
+	flex: 1;
+	margin-left: 30px;
+	color: #fff;
+}
+
+.heroinner p {
+	font-size: 28px;
+	color: #fff;
+	margin: 10px 0;
+}
+
+.herotitle {
+	display: inline-block;
+	margin-top: -20px;
+	font-family: Termina, sans-serif;
+	font-weight: bold;
+	font-size: 53px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.intro {
+	font-family: Termina, sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	color: #5EB1BF;
+	text-transform: uppercase;
+}
+
+.heroinner ul {
+	list-style: none;
+	padding: 0;
+	font-size: 24px;
+}
+
+.heroinner ul li:before {
+	content: "\2022";
+	color: #5EB1BF;
+	display: inline-block;
+	width: 1em;
+}
+
+/* CTA */
+
+button {
+	font-weight: 400;
+	font-size: 18px;
+	background: #ffc439;
+	border: none;
+	padding: 10px 50px 12px 50px;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+button a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button:hover {
+	cursor: pointer;
+	filter: brightness(0.95);
+}
+
+/* Main content */
+
+.half {
+	flex: 1;
+	margin-right: 50px;
+}
+
+.half:nth-of-type(2) {
+	margin-right: 0;
+}
+
+.placeholder {
+	width: 100%;
+	height: 330px;
+	background: #efefef url('../img/train-100-logo-one-colour.svg') no-repeat center center ;
+	margin-bottom: 50px;
+}
+
+.placeholder img {
+	border: 2px solid #EFEFEF;
+}
+
+.headlines, .details {
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+}
+
+/* Layout */
+
+.sessions {
+	background: #f8f8f8;
+	padding: 60px 0;
+}
+
+.social {
+	margin-top: 15px;
+}
+
+.inner {
+	display: flex;
+}
+
+.third {
+	flex-grow:  1;
+	width: 30.5%;
+	margin-right: 4.25%;
+}
+
+.third:nth-of-type(3) {
+	margin-right: 0;
+}
+
+.half {
+	float: left;
+	width:  48%;
+	margin-right: 4%;
+}
+
+.full {
+	width: 100%;
+}
+
+.full-width {
+	display: flex;
+	margin-top: 80px;
+	width: 100%;
+	background: #2D54A2;
+	height: 340px;
+	text-align: center;
+}
+
+.half:nth-of-type(2) {
+	margin-right:  0;
+}
+
+.highlights a {
+	font-size: 20px;
+	border-bottom: 2px solid #dedede;
+	transition: all 0.2s ease-in-out;
+	font-weight: 400;
+}
+
+.highlights a:hover {
+	color: #4A6EB5;
+	border-bottom: 2px solid #4A6EB5;
+}
+
+.highlights img:hover {
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+.feedback-entry, .location-entry {
+	display: flex;
+	padding: 3.5% 5%;
+	margin: 30px 0 0;
+	text-align: center;
+	background: #f5f5f5;
+}
+
+.location-entry {
+	padding: 0 3.5% 0 0;
+}
+
+.social {
+	width: 50%;
+	margin: 2.5%;
+}
+
+.social img {
+	max-width: 80px;
+	margin: 0 auto;
+}
+
+.feedback {
+	width: 100%;
+}
+
+.feedback-entry p {
+	margin: 0;
+}
+
+.journey {
+	width: 100%;
+	text-align: center;
+}
+
+.location-entry img {
+	width: 360px;
+	height: 200px;
+	margin: 0 50px 0 0;
+}
+
+.location-inner {
+	padding: 2.5%;
+}
+
+/* Headings */
+
+h1 {
+	font-family: termina, sans-serif;
+	/* font-size: 42px; */
+	color: #5EB1BF;
+	text-transform: uppercase;
+	font-size: 3vw;
+	margin: 7.5vw 0 3.65vw 0;
+}
+
+h1.coaching {
+	color: #ffffff;
+	text-transform: none;
+	text-align: center;
+	font-weight: 300;
+}
+
+h2, h3, h4 {
+	font-family: termina, sans-serif;
+	font-size: 26px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #4A6EB5;
+	text-transform: uppercase;
+	margin: 20px 0 10px 0;
+}
+
+h4 {
+	font-size: 38px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/* Text elements */
+
+.new {
+	font-family: termina, sans-serif;
+	font-size: 28px;
+	background: #5EB1BF;
+	color: #fff;
+	padding: 0px 15px;
+	border-radius: 70px;
+	text-transform: uppercase;
+}
+
+.price {
+	font-size: 48px;
+	font-weight: 600;
+	color: #5EB1BF;
+	line-height: 56px;
+}
+
+.price span {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	background: #5EB1BF;
+	text-align: center;
+	border-radius: 30px;
+	padding: 2px 0;
+	line-height: 20px;
+}
+
+.reviews {
+	margin-top: 10px;
+}
+
+.reviews span {
+	display: block;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.cta {
+	display: inline-block;
+	background: #ffc43a;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	margin: 3% 0;
+	border: 2px solid #ffc43a;
+	padding: 1.5% 2%;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+/* Paypal */
+
+#paypal-button-container {
+	margin-top: 40px;
+}
+
+/* Tooltip */
+
+.tooltip-white {
+	--balloon-color: #ffffff;	
+	--balloon-text-color: #2D54A2;
+}
+
+/* Play Button */
+
+.playbutton {
+	margin-bottom: 5vw;
+}

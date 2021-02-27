@@ -1,0 +1,253 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	font-family: neuzeit-grotesk, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 140%;
+	color: #414141;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color:  inherit;
+}
+
+.container {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.inner {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	height: 130px;
+	width: 100%;
+	align-items: center;
+}
+
+/* Navigation */
+
+nav {
+	float: right;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	height: 77px;
+  	font-size: 16px;
+  	letter-spacing: 0.05em;
+}
+
+nav ul {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+	display: inline-block;
+	float:  left;
+	list-style-type: none;
+	margin-right: 28px;
+	text-transform: uppercase;
+}
+
+nav ul li:hover {
+	cursor: pointer;
+	border-bottom: 1px solid #dedede;
+	padding-top: 1px;
+}
+
+.book {
+	padding: 0px 10px 10px 10px;
+	background: #4780BC;
+	color: #ffffff;
+	margin-top: -44px;
+}
+
+.book:hover {
+	border: none;
+	padding: 0px 10px 10px 10px;
+	background: #3d8fe5;
+}
+
+.book img {
+	margin: 0 auto;
+	padding: 15px 0 10px 0;
+}
+
+.logo {
+	float: left;
+	width: 180px;
+}
+
+/* Headings */
+
+h1 {
+	font-family: rubik, sans-serif;
+	font-size: 46px;
+	font-weight: 300;
+	color: #ffffff;
+	line-height: 133%;
+	text-align: center;
+}
+
+h2, h3 {
+	margin: 22px 0;
+	font-family: rubik, sans-serif;
+	font-size: 28px;
+	line-height: 112.5%;
+	font-weight: 300;
+	color: #4780bc;
+}
+
+/* Hero */
+
+.hero {
+	height: 510px;
+	padding: 170px 0;
+	background: url('../img/hero-background-1x.png');
+	background-size: cover;
+}
+
+/* Layout */
+
+section {
+	margin-top:  75px;
+}
+
+.sessions {
+	background: #f8f8f8;
+	padding: 60px 0;
+}
+
+.social {
+	margin-top: 15px;
+}
+
+.full {
+	width: 100%;
+}
+
+.third {
+	float: left;
+	width: 30.5%;
+	margin-right: 4.25%;
+}
+
+.third:nth-of-type(3) {
+	margin-right: 0;
+}
+
+.half {
+	float: left;
+	width:  48%;
+	margin-right: 4%;
+}
+
+.half:nth-of-type(2) {
+	margin-right:  0;
+}
+
+.highlights a {
+	font-size: 20px;
+	border-bottom: 1px solid #dedede;
+}
+
+.highlights a:hover {
+	color: #4780bc;
+}
